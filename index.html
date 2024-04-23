@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Accordion with Plus Minus Icon</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+	/* Custom style */
+    .accordion-button::after {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+      transform: scale(.7) !important;
+    }
+    .accordion-button:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    }
+    body {
+        font-family: monospace,sans-serif;
+    }
+    h1,footer {
+        background-color: #014D4E;
+        color : white;
+        padding: 5px;
+        text-align: center;
+        font-family: monospace,sans-serif;
+    }
+</style>
+</head>
+<body>
+<div class="m-4">
+    <center>
+        <h1>TruthCon <br> TEDxNapierBridge </h1>
+        <div style="font-size: medium;">
+          TruthCon is a TEDxNapier Bridge impact project that explores the world of misinformation by examining its origins, its appeal, and how it spreads - supercharged by AI - and solutions to it.
+          <br> <br>The microsite developed as part of the project offers citizens solutions in the form of a reporting mechanism to counter misinformation, including deepfakes.
+        </div><br>
+      </center>
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Report Misinformation through WhatsApp</button>									
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>
+                        You have the option to send reputable fact-checking organizations (International Fact-Checking Network (IFCN) signatories) in India about potential misinformation. These organizations can then respond by sending you a
+                        fact-checking article.
+                      </p>
+                      <ul>
+                        <li>Boom Live - <a href="https://wa.me/917700906111" target="_blank">Click Here</a></li>
+                        <li>Quint WebQoof - <a href="https://wa.me/919643651818" target="_blank">Click Here</a></li>
+                        <li>Times Verified - <a href="https://wa.me/919819888887" target="_blank">Click Here</a></li>
+                        <li>Alt News - <a href="https://wa.me/917600011160" target="_blank">Click Here</a></li>
+                        <li>India Today - <a href="https://wa.me/917370007000" target="_blank">Click Here</a></li>
+                        <li>YouTurn (Tamil) - <a href="https://api.whatsapp.com/send?phone=916369748351&text=Hi%20You%20Turn!" target="_blank">Click Here</a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Do it yourself fact-check</button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>When using Google's Fact Check Explorer to search for a topic, you can easily find fact checks conducted by independent organizations from around the world - <a href="https://toolbox.google.com/factcheck/explorer/search" target="_blank">Click Here</a></p>
+            <h6><u>Fact-Checking Organizations in India</u></h6>
+            <p>Access Fact-checks: There are established fact-checking organizations in India, you can access fact-check easily through their web portal. The following are organizations</p>
+            <ul>
+                <li>Boom Live - <a href="https://www.boomlive.in/fact-check" target="_blank">Click Here</a></li>
+                <li>AFP - <a href="https://factcheck.afp.com/afp-india" target="_blank">Click Here</a></li>
+                <li>Factly - <a href="https://factly.in/category/english/" target="_blank">Click Here</a></li>
+                <li>Quint WebQoof - <a href="https://www.thequint.com/news/webqoof" target="_blank">Click Here</a></li>
+                <li>Alt News - <a href="https://www.altnews.in/" target="_blank">Click Here</a></li>
+                <li>India Today - <a href="https://www.indiatoday.in/fact-check" target="_blank">Click Here</a></li>
+                <li>YouTurn (Tamil) - <a href="https://youturn.in/" target="_blank">Click Here</a></li>
+            </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Reporting Harmful Content Online</button>                     
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>You can submit reports on specific platforms, about the following harms:</p>
+			<ol>
+			  <li>Threats</li>
+			  <li>Impersonation</li>
+			  <li>Bullying & Harassment</li>
+			  <li>Self-harm or Suicide</li>
+			  <li>Online Abuse Violent Content</li>
+			</ol>
+			<ul>
+			  <li>Reporting to Facebook - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/facebook/no/" target="_blank">Click Here</a></li>
+			  <li>Reporting to Instagram - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/instagram/no/" target="_blank">Click Here</a></li>
+			  <li>Report to SnapChat - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/snapchat/no/" target="_blank">Click Here</a></li>
+			  <li>Report to X (Twitter) - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/twitter/no/" target="_blank">Click Here</a></li>
+			  <li>Report to YouTube - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/youtube/no/" target="_blank">Click Here</a></li>
+			  <li>Report to LinkedIn - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/linkedin/no/" target="_blank">Click Here</a></li>
+			  <li>Report to Google - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/google-search/no/" target="_blank">Click Here</a></li>
+			  <li>Report to Tinder - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/tinder/no/" target="_blank">Click Here</a></li>
+			  <li>Report to Hinge - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/hinge/no/graphic-content/" target="_blank">Click Here</a></li>
+			  <li>Report to Pinterest - <a href="https://reportharmfulcontent.com/report/where-is-the-content-posted/have-you-reported-it-to-pinterest/please-find-links-below-to-pinterest-s-community-guidelines-and-how-to-report-content/" target="_blank">Click Here</a></li>
+			</ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">Reporting Cybercrime</button>                     
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>For any form of online distress/harassment on social media platforms, economic fraud, matrimonial fraud, online loan scam, job fraud or in case of online sexual abuse or harassment, report <a href="https://cybercrime.gov.in" target="_blank">here</a> or call <b>1930</b></p>
+            <p>If you receive obscene, threatening content (photos, pictures, abusive words) through messages, emails, or on social networking profiles, or if you want to report a fake account or a hacked account, please reach out to Cyber Wellness Helpline <b>+91 7353107353</b> or visit the website to fill the form - <a href="https://responsiblenetism.org/learn-to-report/" target="_blank">here</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">What to do in case you find a deepfake of yourself online?</button>                     
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <h6><u>Stop Non-Consensual Intimate Image Abuse (Above 18+)</u></h6>
+				<p>StopNCII.org is a free tool designed to support victims of Non-Consensual Intimate Image (NCII) abuse - <a href="https://stopncii.org/" target="_blank">StopNCII.org</a> | How it works - <a href="https://stopncii.org/how-it-works/" target="_blank">How it works</a></p>
+				<h6><u>Take it down (Under 18+)</u></h6>
+				<p>This service is one step you can take to help remove online nude, partially nude, or sexually explicit photos and videos taken before you were 18 - <a href="https://takeitdown.ncmec.org/" target="_blank">Take it down</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix">Reporting to adult sites</button>                     
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <h6><u>Non-consensual sharing of intimate images and videos</u></h6>
+            <p>If you prefer to report non-consensually uploaded personal images and videos yourself, you can find some content takedown forms below. These are the sites where we see the most content being shared. Most sites will have a route to report content for removal. Look for a heading at the top called 'support' or in the footer of the website called ‘content removal’ or ‘contact us’; they should provide an email address or have a contact form.</p>
+            <p>VPN connection may be required, as these domains are blocked in India</p>
+            <ul>
+                <li><a href="https://www.pornhub.com/content-removal" target="_blank">Pornhub - Click Here</a></li>
+                <li><a href="https://xhamster.com/info/contact" target="_blank">Xhamster - Click Here</a></li>
+                <li><a href="https://info.xvideos.com/takedown" target="_blank">Xvideos - Click Here</a></li>
+                <li><a href="https://info.xnxx.com/contact" target="_blank">Xnxx - Click Here</a></li>
+            </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSeven">Useful links to educate yourself on Misinformation</button>                     
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <ul>
+                        <li>How our brain reacts to misinformation - <a href="https://fakeless.org/wp-content/uploads/2023/08/How-our-braine-works_CURVES_132x84cm_RGB_english-2.pdf" target="_blank">Click Here</a></li>
+                        <li>Breaking news checklist - <a href="https://newslit.org/wp-content/uploads/2023/12/Breaking-News_Infographic_FINAL.pdf" target="_blank">Click Here</a></li>
+                        <li>How to avoid falling for misinformation, AI images on social media - <a href="https://www.washingtonpost.com/technology/2023/05/22/misinformation-ai-twitter-facebook-guide/" target="_blank">Click Here</a></li>
+                        <li>Five steps for vetting a news source - <a href="https://newslit.org/wp-content/uploads/2022/12/IsItLegit_infographic.pdf" target="_blank">Click Here</a></li>
+                        <li>10 characteristics of misinformation - <a href="https://fakeless.org/wp-content/uploads/2023/08/10persones_curves_rgb_English.pdf" target="_blank">Click Here</a></li>
+                        <li>How to stay protected against AI voice cloning scams - <a href="https://drive.google.com/file/d/12uzzxH1FoaSDKGImN8tP3P_Uh8aDwJm5/view?usp=sharing" target="_blank">Click Here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEight">Privacy Tools</button>                     
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <ul>
+                        <li>Find and privacy-respecting alternatives to popular software and services - <a href="https://awesome-privacy.xyz/" target="_blank">Click Here</a></li>
+                        <li>Checklist and guide to securing your digital life and protecting your privacy - <a href="https://digital-defense.io/checklist/" target="_blank">Click Here</a></li>
+                        <li>Check if your email address is in a data breach - <a href="https://haveibeenpwned.com/" target="_blank">Click Here</a></li>
+                        <li>Secure email, vpn, password manager - <a href="https://proton.me/" target="_blank">Click Here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+    <footer>
+        <p> &copy; This microsite is made by TEDxNapier Bridge - Follow us <a href="https://twitter.com/newsofchennai" target="_blank">Instagram</a> & <a href="https://www.instagram.com/newsofchennai/" target="_blank">Twitter</a> for more information and upcoming ideas.</p>
+    </footer>
+</div>
+</body>
+</html>                            
