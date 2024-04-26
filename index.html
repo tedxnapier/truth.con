@@ -222,9 +222,38 @@
             </div>
         </div>
     </div> <hr/>
+    <center>
+        <div class="audio-guide">
+            <div id="headingTedx">Audio Guide - TruthCon Exhibition</div><br>
+            <p style="font-size: 1rem;font-style: italic;">Below is the guide for attendees of TruthCon Exhibition. It will be available on this website until April 28th at 7:00 PM. If you would like to attend the exhibition for free, <a href="https://bit.ly/truthcon-tedx">please get your passes here</a></p>
+            
+            <div class="dropdown">
+              <select id="headingTedx" onchange="playAudio(this.value)">
+                <option value="" selected disabled hidden>Select Audio</option>
+                <option value="audio/Intro.mp3">1. Introduction - Welcome to TruthCon</option>
+                <option value="audio/Timeline.mp3">2. Timeline - History of Misinformation</option>
+                <option value="audio/Psycholgy.mp3">3. Psychology behind Misinformation</option>
+                <option value="audio/Deepfakes.mp3">4. Deepfakes - Impact of AI</option>
+                <option value="audio/Solutions.mp3">5. Solutions: Tackling Misinformation</option>
+              </select>
+            </div>
+        </div>
+    </center><hr/>
     <footer>
         <p> This microsite is made by <a href="https://www.tedxnapierbridge.com/" target="_blank">TEDxNapier Bridge</a> - Follow us <a href="https://instagram.com/tedxnapier" target="_blank">Instagram</a> & <a href="https://www.twitter.com/tedxnapier/" target="_blank">Twitter</a> for more information.</p>
     </footer>
 </div>
+<script>
+    //audio guide
+    var currentAudio = null;
+    
+    function playAudio(audioSrc) {
+        if (currentAudio!== null) {
+        currentAudio.pause();
+        }
+        currentAudio = new Audio(audioSrc);
+        currentAudio.play();
+    }
+</script>
 </body>
 </html>                            
