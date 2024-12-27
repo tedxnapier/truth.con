@@ -99,7 +99,21 @@
             height: 500px; 
         }
     } */
-    
+    .pdf-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%; /* Aspect ratio of 4:3, adjust as needed */
+        overflow: hidden;
+    }
+
+    .responsive-pdf {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 </head>
 <body>
@@ -124,7 +138,9 @@
                         <em><strong>TEDxNapier Bridge</strong></em> presented <strong>"TruthCon: Tackling Misinformation,"</strong> a unique event that explored the origins, appeal, and spread of misinformation, enhanced by AI. The open exhibition examined how misinformation affected our lives and the role of AI in its creation and mitigation, featuring interactive exhibits that provided insights into its underlying structures and impacts. The event took place on Apr 27 and Apr 28, 2024, in Chennai, India.
                     </p>
                     <p>
-                        <iframe src="TruthCon.pdf" class="responsive-pdf" frameborder="0"></iframe>
+                        <div class="pdf-container">
+                            <iframe src="TruthCon.pdf" class="responsive-pdf" frameborder="0"></iframe>
+                        </div>
                     </p>
                 </div>
             </div>
@@ -265,7 +281,7 @@
                 </div>
             </div>
         </div>
-        <p id="last-update"><em>*Above content is last updated on 10 December 2024</em></p>
+        <p id="last-update"><em>*Above content is last updated on 27 December 2024</em></p>
 
     </div>
     <hr/>
