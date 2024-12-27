@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TruthCon by TEDxNapier Bridge</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 <style>
     /* Container for center alignment */
@@ -46,6 +47,11 @@
         color: #000;
     }
 
+    #headingZero > .accordion-button{
+        background-color: #e70000;
+        color:white;
+    }
+
     .accordion-item {
         margin-bottom: 1rem;
         border: none;
@@ -74,6 +80,12 @@
             font-size: 12px;
         }
     }
+    .responsive-pdf {
+        width: 100%;
+        height: 500px;
+    }
+
+    
 </style>
 </head>
 <body>
@@ -83,12 +95,29 @@
     
         <div id="headingTedx">
             TruthCon is a TEDxNapier Bridge impact project that explores the world of misinformation by examining its origins, its appeal, and how it spreads—supercharged by AI. The microsite developed as part of the project offers citizens solutions in the form of a reporting mechanism to counter misinformation, including deepfakes.
-        </div><br>
+        </div>
       </center>
-    <div class="accordion" id="myAccordion">
+    <div class="accordion mt-3" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingZero">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseZero">
+                    Check Our TruthCon Exhibition Virtually
+                </button>
+            </h2>
+            <div id="collapseZero" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>
+                        <em><strong>TEDxNapier Bridge</strong></em> presented <strong>"TruthCon: Tackling Misinformation,"</strong> a unique event that explored the origins, appeal, and spread of misinformation, enhanced by AI. The open exhibition examined how misinformation affected our lives and the role of AI in its creation and mitigation, featuring interactive exhibits that provided insights into its underlying structures and impacts. The event took place on Apr 27 and Apr 28, 2024, in Chennai, India.
+                    </p>
+                    <p>
+                        <iframe src="TruthCon.pdf" class="responsive-pdf" frameborder="0"></iframe>
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Report Misinformation</button>							
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne"> <i class="fa-solid fa-file-export"></i>&nbsp;Report Misinformation</button>							
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                 <div class="card-body">
@@ -121,7 +150,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Report Harmful Content Online</button>              
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"><i class="fa-solid fa-triangle-exclamation"></i> &nbsp; Report Harmful Content Online</button>              
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                 <div class="card-body">
@@ -150,7 +179,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">Report Deepfakes</button>
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour"><i class="fa-solid fa-skull-crossbones"></i>&nbsp;Report Deepfakes</button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                 <div class="card-body">
@@ -163,7 +192,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">Report to Adult Sites</button>                     
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive"><i class="fa-solid fa-square-xmark"></i>&nbsp;Report to Adult Sites</button>                     
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                 <div class="card-body">
@@ -181,7 +210,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Report Cybercrime</button>              
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"><i class="fa-solid fa-handcuffs"></i>&nbsp;Report Cybercrime</button>              
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                 <div class="card-body">
@@ -192,7 +221,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingSix">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix">Privacy Tools</button>                     
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix"><i class="fa-solid fa-fingerprint"></i>&nbsp;Privacy Tools</button>                     
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                 <div class="card-body">
@@ -207,7 +236,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingSeven">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSeven">Useful links on Misinformation</button>                     
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSeven"><i class="fa-solid fa-newspaper"></i>&nbsp;Useful links on Misinformation</button>                     
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                 <div class="card-body">
